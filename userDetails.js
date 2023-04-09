@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+import { Schema, model } from "mongoose";
 
-const UserDetailsSchema = new mongoose.Schema(
+const UserDetailsSchema = new Schema(
   {
     uname: String,
     pwd: String,
@@ -11,4 +11,4 @@ const UserDetailsSchema = new mongoose.Schema(
   }
 );
 
-mongoose.model("UserInfo", UserDetailsSchema);
+model("UserInfo", UserDetailsSchema);

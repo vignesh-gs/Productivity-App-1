@@ -29,15 +29,21 @@ app.post("/post", async (req, res) => {
   console.log(req.body);
 });
 
-// const User = mongoose.model("UserInfo");
+import "./userDetails.js";
 
-// app.post("/register", async (req, res) => {
-//   const [name, pass] = req.body;
-//   try {
-//     await User.create({
-//       uname: name,
-//       pwd: pass,
-//     });
-//     res.send({ status: "Ok" });
-//   } catch (error) {}
-// });
+const User = mongoose.model("UserInfo");
+
+app.post("/register", async (req, res) => {
+  const [name, pass] = req.body;
+  try {
+    await User.create({
+      uname: name,
+      pwd: pass,
+    });
+    res.send({ status: "Ok" });
+  } catch (error) {
+    res.send(status);
+  }
+});
+
+// Vaishakh-Nambiar/Productivity-App
