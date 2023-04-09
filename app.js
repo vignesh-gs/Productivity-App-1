@@ -1,13 +1,14 @@
-const express = require("express");
+import express, { json } from "express";
 const app = express();
 
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-app.use(express.json);
+app.use(json);
 
 // setting up mongodb
 const mongoUrl =
-  "mongodb+srv://vaishakhnambiar2002:productKey@cluster0.lnikm52.mongodb.net/?retryWrites=true&w=majority";
+  // "mongodb+srv://vaishakhnambiar2002:productKey@productivityapp.7ronhtf.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://vaishakhnambiar2002:vaishKey@productivityapp.7ronhtf.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose
   .connect(mongoUrl, {
@@ -27,3 +28,16 @@ app.listen(3000, () => {
 app.post("/post", async (req, res) => {
   console.log(req.body);
 });
+
+// const User = mongoose.model("UserInfo");
+
+// app.post("/register", async (req, res) => {
+//   const [name, pass] = req.body;
+//   try {
+//     await User.create({
+//       uname: name,
+//       pwd: pass,
+//     });
+//     res.send({ status: "Ok" });
+//   } catch (error) {}
+// });
