@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Reem Kufi", sans-serif !important; */
+  font-family: "Nunito", sans-serif;
+}
+
+root {
+  --light-green: #d6e8db;
+  --light-cream: #fff8de;
+  --light-purple: #d4adfc;
+  --light-blue: #b6eafa;
+  --light-orange: #ffd3a3;
+  --light-red: #e76161;
+  --off-white: #f6f1f1;
+  --offpink: #ffebeb;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  max-width: 100%;
+}
+body {
+  background-color: white;
+}
+.App {
+  text-align: center;
+  /* height: 1097px;
+  width: 1710px; */
+
+  border-radius: 0px;
+}
+.welcome_container {
+  position: relative;
+  /* width: 1728px;
+  height: 1117px; */
+
+  background: #ffffff;
+}
+.bg {
+  position: absolute;
+  width: 1728px;
+  height: 1114px;
+  left: 0px;
+  top: 3px;
+  background-image: url("./assets/pc.jpg");
+  background-size: cover;
+}
+.maintitle {
+  position: absolute;
+  width: 528px;
+  height: 86px;
+  left: 388px;
+  top: 387px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+
+  color: #f0e5e5;
+}
+.button {
+  z-index: 5;
+  top: 500px;
+  background-color: red;
+}
+
+/*BELOW ARE THE CSS IMPORTED FROM SE_BACK*/
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-family: "Abhaya Libre SemiBold";
+  font-style: normal;
+  background-image: white;
+}
+
+.auth-form-container,
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+  border: beige;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: black;
+  border-radius: 10px;
+}
+
+button {
+  border: black;
+  border-width: 5px;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.link-btn {
+  background: none;
+  color: rgb(144, 144, 221);
+  text-decoration: underline;
+}
+
+.forgotpass {
+  text-align: right;
+  background: none;
+  text-decoration: underline;
+  color: rgb(144, 144, 221);
+}
+/*END OF SE_BACK*/

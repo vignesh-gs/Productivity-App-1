@@ -1,0 +1,174 @@
+root {
+  --light-green: #d6e8db;
+  --light-cream: #fff8de;
+  --light-purple: #d4adfc;
+  --light-blue: #b6eafa;
+  --light-orange: #ffd3a3;
+  --light-red: #e76161;
+  --off-white: #f6f1f1;
+  --offpink: #ffebeb;
+}
+/* 
+.ot-red {
+  outline: 2px solid red;
+}
+.ot-black {
+  outline: 2px solid black;
+}
+.ot-blue {
+  outline: 2px solid blue;
+} */
+
+.nav-icons,
+.homepage,
+.nav-profile {
+  display: flex;
+}
+/* ----------------------------------------------- */
+.home-nav {
+  padding: 2rem 1rem;
+}
+.nav-profile {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-user-photo {
+  border-radius: 50%;
+  min-height: 50px;
+  aspect-ratio: 1/1;
+  border: 2px solid black;
+}
+
+.nav-icons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  outline: 2px solid black;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.icon-notification,
+.icon-add {
+  position: relative;
+  z-index: 1;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.notif {
+  position: absolute;
+  font-size: 10px;
+  top: 8px;
+  z-index: 4;
+  text-align: center;
+  height: 20px;
+  width: 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: #19a7ce;
+}
+/* ------------------------------------------- */
+.homepage {
+  flex-direction: column;
+  /* border: 2px solid black; */
+  width: 100%;
+  min-height: 100vh;
+}
+.home-name {
+  display: flex;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+}
+.greetText {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4rem;
+  padding: 0.5rem 1rem;
+}
+.greetText div {
+  display: flex;
+}
+
+.home-start-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.start-date div,
+.start-task div {
+  display: flex;
+}
+
+.start-task div {
+  justify-content: end;
+}
+
+/* ------------------- */
+
+.main-options {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+.main-todo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.main-box {
+  width: 100%;
+  /* background-color: #b6eafa; */
+  padding: 0.5rem;
+  border-bottom: 2px solid rgb(142, 142, 142);
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+.task-count {
+  padding: 0 0.5rem;
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #0b2447;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.text-emp {
+  font-weight: 700;
+  color: black;
+}
+.text-light {
+  font-weight: 500;
+  color: #9ba4b5;
+}
+.main-buttons {
+  display: flex;
+  padding: 0.5rem;
+}
+.main-buttons button {
+  margin: 0 0.5rem;
+  background: white;
+  color: black;
+  border: 2px solid black;
+  transition: all 200ms;
+}
+.main-buttons button:hover {
+  background-color: black;
+  color: white;
+}
+.btn-active {
+  background-color: black;
+  color: white;
+}

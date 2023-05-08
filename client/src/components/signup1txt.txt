@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+  <style>  
+       /* Style the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center; 
+}
+
+/* Style the form */
+form {
+  width: 50%;
+  padding: 20px;
+margin: auto;
+}
+
+ /* Add styles to the input fields */
+      input[type=text], input[type=password] {
+        width: 70%;
+  margin: 0 auto;
+        padding: 12px 20px;
+        margin: 15px auto;
+        display: inline-block;
+        border: 1px solid #000000;
+        border-radius: 30px;
+        box-sizing: border-box;
+      }
+
+      /* Add styles to the submit button */
+      button[type=submit] {
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        margin: 70px auto;
+        border: none;
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        cursor: pointer;
+        width: 30%;
+        display: block;
+      }
+
+/* Add a hover effect to the submit button */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Add a clear button */
+.clearbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Add padding to the container */
+.container {
+  padding: 16px;
+}
+
+/* Add styles to the h1 element */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+ /* Add styles to the sign in link */
+   .signup-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .signup-link a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .signup-link a:hover {
+      text-decoration: underline;
+    }q	a
+
+    /* Add styles to the container of the sign-up button and the "Already have an account?" link */
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+</style>
+</head> 
+      
+  <body>
+    <div class="container">
+      <form>
+        <h1>Sign Up</h1>
+       
+        <input type="text" placeholder="Enter Name" name="name" required>
+
+       
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <input type="password" placeholder="Confirm Password" name="psw-confirm" required>
+
+         <div class="button-container">
+          <button type="submit" class="signupbtn">Sign Up</button>
+
+          <div class="signup-link">
+            Already have an account? <a href="#">Sign In</a>
+          </div>
+        </div>
+       
+      </form>
+    </div>
+    <script>
+// Add an event listener to the form
+document.querySelector('form').addEventListener('submit', function(event) {
+  // Prevent the default form submission
+  event.preventDefault();
+
+  // Get the values of the form inputs
+  var name = document.querySelector('input[name="name"]').value;
+  var password = document.querySelector('input[name="password"]').value;
+  var confirmPassword = document.querySelector('input[name="psw-confirm"]').value;
+
+  // Validate the form inputs
+  if (name === '' || password === '' || confirmPassword === '') {
+    alert('Please fill in all the fields');
+    return;
+  }
+
+  if (password !== confirmPassword) {
+    alert('The passwords do not match');
+    return;
+  }
+
+  // If the form is valid, submit the form
+  alert('Form submitted successfully');
+  document.querySelector('form').submit();
+});
+</script>
+  </body>
+</html>
