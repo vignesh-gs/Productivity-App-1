@@ -22,15 +22,22 @@ function App() {
       {/* <Router>
         <Routes>
           <Route path="/" element={<Welcome onFormSwitch={toggleForm} />} />
-          {currentForm === 'login' &&
-            <Route path="login" element={<Login navigate={Navigate} onFormSwitch={toggleForm} />} />
-          }
-          {currentForm === 'register' &&
-            <Route path="register" element={<Register navigate={Navigate} onFormSwitch={toggleForm} />} />
-          }
-          
+          {currentForm === "login" && (
+            <Route
+              path="login"
+              element={<Login navigate={Navigate} onFormSwitch={toggleForm} />}
+            />
+          )}
+          {currentForm === "register" && (
+            <Route
+              path="register"
+              element={
+                <Register navigate={Navigate} onFormSwitch={toggleForm} />
+              }
+            />
+          )}
         </Routes>
-      </Router>  */}
+      </Router> */}
       <Homepage />
     </div>
   );

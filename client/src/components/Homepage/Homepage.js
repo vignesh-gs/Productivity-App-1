@@ -19,6 +19,7 @@ var dayCal = [
   "Saturday",
   "Sunday",
 ];
+
 var monthCal = [
   "Jan",
   "Feb",
